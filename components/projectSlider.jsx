@@ -1,10 +1,11 @@
 "use client";
+import Link from "next/link";
 import React, { useEffect } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Lenis from "@studio-freight/lenis";
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import Lenis from "@studio-freight/lenis";
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 const ProjectSlider = () => {
   // useEffect(() => {
@@ -90,9 +91,45 @@ const ProjectSlider = () => {
     //     </div>
     //   </div>
     // </div>
-    <div className="h-screen w-screen place-content-center">
-      {" "}
-      Page under Progress
+    <div className=" experienceTl h-screen w-screen justify-center items-center">
+      <div className="container">
+        <main className="row">
+          {" "}
+          <section className="col">
+            <header className="title">
+              <h2>PROJECTS</h2>
+            </header>
+
+            <div className="contents">
+              <div className="box">
+                <h3 className="font-bold">Book Listing Application - CRUD </h3>
+                <p>MERN Stack</p>
+                <br />
+                <p className="font-bold">Skills :</p>
+                <p>Javascript, MongoDB , Expressjs , Reactjs , Nodejs</p>
+
+                <Link href="https://github.com/mineel2107/book_listing_MERN">
+                  <p className="font-bold mt-3 w-full mx-auto box-border ">
+                    Github Repo
+                  </p>
+                </Link>
+              </div>
+
+              <div className="box">
+                <h3 className="font-bold">Nextjs Dashboard</h3>
+                <p>Nextjs 14</p>
+                <br />
+                <p className="font-bold">Skills :</p>
+                <p>Javascript, Reactjs , Vercel </p>
+
+                <Link href="https://github.com/mineel2107/dashboard_application_nextjs">
+                  <p className="font-bold mt-3 w-full mx-auto ">Github Repo</p>
+                </Link>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
     </div>
   );
 };

@@ -7,7 +7,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <div className="flex flex-row w-full mr-70px h-full z-20">
-      <div className="flex flex-col w-[70%] justify-start mt-16 mx-auto place-items-start h-full ml-20">
+      <div className="flex flex-col w-[55%] justify-start mt-16 mx-auto place-items-start h-full ml-20">
         <div className="flex flex-col align-items-start">
           <h2 className="hello">Hello , </h2>
           <div className=" flex items-center text-center">
@@ -28,7 +28,7 @@ const Hero = () => {
           <HiArrowRight className="text-white text-4xl group-hover:translate-x-2 transition-all duration-300 ml-3" />
         </h2> */}
       </div>
-      {/* <div className="w-[25%] justify-end mr-14 rounded-full my-auto dev_img">
+      <div className="w-[25%] justify-end mr-[75px] rounded-full my-auto dev_img">
         <Image
           src="/mirror_selfie.jpg"
           width={300}
@@ -37,7 +37,7 @@ const Hero = () => {
           loading="lazy"
           className="rounded-t-full rounded-b-full"
         />
-      </div> */}
+      </div>
     </div>
   );
 };
